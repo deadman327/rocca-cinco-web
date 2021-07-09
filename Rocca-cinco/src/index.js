@@ -1,9 +1,14 @@
+require("dotenv").config();
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const exp = require('constants');
+
+//Database
+require("./database");
+
 // Initiliazations
 const app = express();
 
