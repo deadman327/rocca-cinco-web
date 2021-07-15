@@ -1,15 +1,15 @@
 const router = require('express').Router();
 
 router.get('/',(req, res) => {
-    res.send('Rocca Cinco Restaurant')
+    res.render('index');
 });
 
 router.get('/menu', (req, res) => {
-    res.send('Menu del restaurante')
+    res.render('menu');
 });
 
 router.get('/contactanos', (req, res) => {
-    res.send('Contacto del restaurante')
+    res.render('contact');
 });
 
 router.get('/reservacion', (req, res) =>{
