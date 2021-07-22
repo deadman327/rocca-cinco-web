@@ -1,5 +1,5 @@
 {
-  "name": "Rocca-cinco",
+  "name": "Rocca-Cinco",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,14 +7,17 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romo43/Rocca-Cinco.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "dotenv": "^10.0.0",
-    "nodemon": "^2.0.11",
-    "npm-check-updates": "^11.8.3"
+  "bugs": {
+    "url": "https://github.com/Romo43/Rocca-Cinco/issues"
   },
+  "homepage": "https://github.com/Romo43/Rocca-Cinco#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
@@ -22,9 +25,14 @@
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.2",
     "method-override": "^3.0.0",
-    "mongoose": "^5.13.2",
+    "mongoose": "^5.13.3",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12",
+    "npm-check-updates": "^11.8.3"
   }
 }

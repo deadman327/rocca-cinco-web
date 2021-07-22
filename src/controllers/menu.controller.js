@@ -18,3 +18,5 @@ menuCtrl.updateFood = (req, res) => {
 menuCtrl.deleteFood = (req, res) => {
     res.send("Hello");
 };
+
+module.exports = menuCtrl;

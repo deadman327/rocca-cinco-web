@@ -18,3 +18,5 @@ promotionCtrl.updatePromotion = (req, res) => {
 promotionCtrl.deletePromotion = (req, res) => {
     res.send("Hello");
 };
+
+module.exports = promotionCtrl;
