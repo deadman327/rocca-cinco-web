@@ -1,4 +1,4 @@
-const {Schema, model} = require("mongoose")
+const { Schema, model } = require("mongoose");
 
 const promotionSchema = new Schema({
     title: {
@@ -17,4 +17,4 @@ const promotionSchema = new Schema({
     timestamps: true
 })
 
-module.exports = model("promotion",promotionSchema)
+module.exports = model("promotion", promotionSchema);

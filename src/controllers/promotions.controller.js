@@ -1,20 +1,20 @@
-import Menu from "../models/Promotions";
+const promotionCtrl = {};
 
-export const renderPromotionForm = (req, res) => {
-    
+promotionCtrl.renderPromotionForm = (req, res) => {
+    res.send("Hello");
 };
-export const createNewPromotion = async (req, res) => {
-    
+promotionCtrl.createNewPromotion = (req, res) => {
+    res.send("Hello");
 };
-export const renderPromotions = async (req, res) => {
-    
+promotionCtrl.renderPromotions = (req, res) => {
+    res.send("Hello");
 };
-export const renderEditForm = async (req, res) => {
-    
+promotionCtrl.renderEditForm = (req, res) => {
+    res.send("Hello");
 };
-export const updatePromotion = async (req, res) => {
-    
+promotionCtrl.updatePromotion = (req, res) => {
+    res.send("Hello");
 };
-export const deletePromotion = async (req, res) => {
-    
+promotionCtrl.deletePromotion = (req, res) => {
+    res.send("Hello");
 };

@@ -1,20 +1,20 @@
-import Menu from "../models/Menu";
+const menuCtrl = {};
 
-export const renderFoodForm = (req, res) => {
-    
+menuCtrl.renderFoodForm = (req, res) => {
+    res.send("Hello");
 };
-export const createNewFood = async (req, res) => {
-    
+menuCtrl.createNewFood = (req, res) => {
+    res.send("Hello");
 };
-export const renderMenu = async (req, res) => {
-    
+menuCtrl.renderMenu = (req, res) => {
+    res.send("Hello");
 };
-export const renderEditForm = async (req, res) => {
-    
+menuCtrl.renderEditForm = (req, res) => {
+    res.send("Hello");
 };
-export const updateFood = async (req, res) => {
-    
+menuCtrl.updateFood = (req, res) => {
+    res.send("Hello");
 };
-export const deleteFood = async (req, res) => {
-    
+menuCtrl.deleteFood = (req, res) => {
+    res.send("Hello");
 };

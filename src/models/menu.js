@@ -1,4 +1,4 @@
-const {Schema, model} = require("mongoose")
+const { Schema, model } = require("mongoose");
 
 const menuSchema = new Schema({
     name: {
@@ -8,7 +8,7 @@ const menuSchema = new Schema({
         type: String
     },
     price: {
-        type: Double
+        type: Number
     },
     type: {
         type: String
@@ -20,4 +20,4 @@ const menuSchema = new Schema({
     timestamps: true
 })
 
-module.exports = model("menu",menuSchema)
+module.exports = model("menu", menuSchema);

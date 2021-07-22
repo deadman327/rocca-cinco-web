@@ -1,13 +1,7 @@
-import {Router} from "express";
-import {
-    renderFoodForm,
-    createNewFood,
-    renderMenu,
-    renderEditForm,
-    updateFood,
-    deleteFood,
-} from "../controllers/menu.controller";
+const { Router } = require('express');
 const router = Router();
+const { renderFoodForm, createNewFood, renderMenu, renderEditForm, updateFood, deleteFood } = require('../controllers/menu.controller');
+
 
 // New food
 router.get('/menu/add', renderFoodForm);
@@ -23,4 +17,4 @@ router.put('/menu/edit-food/:id', updateFood);
 // Delete food
 router.delete('/menu/delete/:id', deleteFood);
 
-export default router;
+module.exports = router;
