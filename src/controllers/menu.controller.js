@@ -1,13 +1,15 @@
+const Menu = require('../models/Menu');
 const menuCtrl = {};
 
-menuCtrl.renderFoodForm = (req, res) => {
+menuCtrl.renderFoodForm = async (req, res) => {
     res.send("Hello");
 };
 menuCtrl.createNewFood = (req, res) => {
     res.send("Hello");
 };
-menuCtrl.renderMenu = (req, res) => {
-    res.send("Hello");
+menuCtrl.renderMenu = async (req, res) => {
+    const dishes = await Menu.find();
+    res.status(200).json(dishes);
 };
 menuCtrl.renderEditForm = (req, res) => {
     res.send("Hello");

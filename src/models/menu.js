@@ -20,4 +20,4 @@ const menuSchema = new Schema({
     timestamps: true
 })
 
-module.exports = model("menu", menuSchema);
+module.exports = model("menu", menuSchema, "menu");

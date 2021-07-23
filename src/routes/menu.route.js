@@ -8,7 +8,7 @@ router.get('/menu/add', renderFoodForm);
 router.post('menu/new-food', createNewFood);
 
 // Get all foods
-router.get('/menu', renderMenu);
+router.get('/dishes', renderMenu);
 
 // Edit food
 router.get('/menu/edit/:id', renderEditForm);
