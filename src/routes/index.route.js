@@ -5,7 +5,6 @@ const {renderIndex, renderMenu} = require('../controllers/index.controller');
 router.get('/', renderIndex);
 router.get('/menu', renderMenu);
 
-
 // router.get('/menu', (req, res) => {
 //     res.render('menu');
 // });

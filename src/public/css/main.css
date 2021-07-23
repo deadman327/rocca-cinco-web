@@ -11,3 +11,37 @@ body {
     #ece9e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/*
+NAVIGATION BAR
+*/
+.navigation-bar-css {
+  background: black;
+  display: block;
+}
+
+.navigation-bar-css ul {
+  justify-content: center;
+  align-content: center;
+}
+
+.navigation-bar-css ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navigation-bar-css ul li a:hover {
+  color: #eeb71b;
+}
+
+.navigation-bar-css ul li {
+  list-style: none;
+  margin-left: 2.6em;
+  margin-right: 2.6em;
+}
+
+.navigation-bar-css ul li img {
+  height: auto;
+  width: 18em;
+}
