@@ -1,5 +1,5 @@
 body {
-  background: #ece9e6;
+  background: #ffffff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient( to right, #ffffff, #ece9e6);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -47,7 +47,7 @@ NAVIGATION BAR
 
 #footer-rocca-cinco {
   width: 100%;
-  height: 400px;
+  height: 30%;
   background-color: black;
 }
 

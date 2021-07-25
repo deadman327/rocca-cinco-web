@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+}
+
+.content {
+  background-color: red;
+  width: 100%;
+  height: 750px;
+  margin-top: -1.2%;
+}
+
+.primary-page-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.slider-container {
+  width: 100%;
+  height: 60%;
+}
+
+.about-us-among {
+  width: 100%;
+  height: 40%;
+}
+
+.about-us-among div {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.order-in-line-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-order {
+  margin-top: 1em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-size: 2em;
+  border-width: 0.1em;
+  border-color: black;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.button-order:hover {
+  background-color: #d0a017; /* Green */
+  color: black;
+}
+.about-us div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span-description span {
+  margin-bottom: 4em;
+}
