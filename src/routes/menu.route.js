@@ -1,20 +1,20 @@
 const { Router } = require('express');
 const router = Router();
-const { renderFoodForm, createNewFood, renderMenu, renderEditForm, updateFood, deleteFood } = require('../controllers/menu.controller');
+const { renderDishForm, createNewDish, renderMenu, renderEditForm, updateDish, deleteDish } = require('../controllers/menu.controller');
 
 
-// New food
-router.get('/menu/add', renderFoodForm);
-router.post('menu/new-food', createNewFood);
+// New dish
+router.get('/menu/add', renderDishForm);
+router.post('menu/new-dish', createNewDish);
 
 // Get all foods
-router.get('/dishes', renderMenu);
+router.get('/menu', renderMenu);
 
-// Edit food
+// Edit dish
 router.get('/menu/edit/:id', renderEditForm);
-router.put('/menu/edit-food/:id', updateFood);
+router.put('/menu/edit-dish/:id', updateDish);
 
-// Delete food
-router.delete('/menu/delete/:id', deleteFood);
+// Delete dish
+router.delete('/menu/delete/:id', deleteDish);
 
 module.exports = router;

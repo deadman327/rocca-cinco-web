@@ -1,24 +1,35 @@
 const Menu = require('../models/Menu');
 const menuCtrl = {};
 
-menuCtrl.renderFoodForm = async (req, res) => {
-    res.send("Hello");
+menuCtrl.renderDishForm = async (req, res) => {
+    res.render('admin/menu/new-dish');
 };
-menuCtrl.createNewFood = (req, res) => {
-    res.send("Hello");
+menuCtrl.createNewDish = async (req, res) => {
+    const { name, description, price, type, URLimage} = req.body;
+    const data = new Menu({ name, description, price, type, URLimage});
+    await Menu.create(data);
+    res.redirect('admin/menu/menu', {data});
 };
 menuCtrl.renderMenu = async (req, res) => {
-    const dishes = await Menu.find();
-    res.status(200).json(dishes);
+    const data = await Menu.find();
+    //res.render('admin/menu/menu');
+    res.status(200).json(data);
 };
-menuCtrl.renderEditForm = (req, res) => {
-    res.send("Hello");
+menuCtrl.renderEditForm = async (req, res) => {
+    const id = req.params.id;
+    const data = await Menu.findById(id)
+    res.render('admin/menu/edit-dish', {data});
 };
-menuCtrl.updateFood = (req, res) => {
-    res.send("Hello");
+menuCtrl.updateDish = async (req, res) => {
+    const id = req.params.id;
+    const { name, description, price, URLimage } = req.body;
+    await Menu.findByIdAndUpdate(id, {name, description, price, URLimage });
+    res.redirect('admin/menu/menu');
 };
-menuCtrl.deleteFood = (req, res) => {
-    res.send("Hello");
+menuCtrl.deleteDish = async (req, res) => {
+    const id = req.params.id;
+    await Menu.findByIdAndDelete(id);
+    res.redirect('admin/menu/menu');
 };
 
 module.exports = menuCtrl;
