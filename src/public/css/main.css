@@ -1,19 +1,16 @@
 body {
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ece9e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient( to right, #ffffff, #ece9e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient( to right, #ffffff, #ece9e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 /*
 NAVIGATION BAR
 */
+
 .navigation-bar-css {
   background: black;
   display: block;
@@ -66,7 +63,6 @@ NAVIGATION BAR
   margin-bottom: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-
   width: 15%;
   height: 10em;
   display: flex;
@@ -109,4 +105,128 @@ NAVIGATION BAR
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.btn-contactUs {
+  font-size: large;
+  text-align: center;
+  background: white;
+  color: black;
+  border: solid black 2px;
+}
+
+.btn-contactUs:hover {
+  text-align: center;
+  background: black;
+  color: white
+}
+
+.nosotros {
+  font-size: 1.4rem;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.nosotros h4{
+  font-size: 1.5rem;
+}
+
+/*Menu*/
+
+.recipe, .recipe-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.recipe-img {
+  flex: 2 0 25ch;
+  height: calc(240px + 2vw);
+  overflow: hidden;
+}
+
+.recipe-img img {
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.recipe {
+  border: 2px solid #ffa600;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recipe-content {
+  padding: 10px 25px;
+  flex: 4 1 40ch;
+}
+
+.recipe-title {
+  margin: 0;
+  font-size: clamp(1.4em, 2.1vw, 2.1em);
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+}
+
+.recipe-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Body Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.big {
+  width: clamp(200px, 65%, 45%);
+  padding: 18px;
+  justify-content: center;
+  display: inline-block;
+}
+/*Contact Us*/
+
+big {
+  width: clamp(200px, 65%, 45%);
+  padding: 18px;
+  justify-content: center;
+  display: inline-block;
+}
+
+
+.serviceApps{
+  text-align: center;
+  align-items: center;
+}
+
+.service-img{
+  margin: 20px;
+  width: 30rem;
+  height: 200px;
+  display: inline-block;
+}
+
+.service-img img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+
+.serviceApps img {
+  
 }
