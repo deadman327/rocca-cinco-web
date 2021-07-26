@@ -5,7 +5,7 @@ const { renderDishForm, createNewDish, renderMenu, renderEditForm, updateDish, d
 
 // New dish
 router.get('/menu/add', renderDishForm);
-router.post('menu/new-dish', createNewDish);
+router.post('/menu/new-dish', createNewDish);
 
 // Get all foods
 router.get('/menu', renderMenu);

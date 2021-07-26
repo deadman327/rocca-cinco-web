@@ -28,36 +28,21 @@
 </div>
 
 
-
-
-<div class="big">
+<div class="d-flex p-2 d-grid gap-3 justify-content-around" >
+    {{#each data}}
     <article class="recipe">
         <div class="recipe-img">
             <img src="https://brotokoll.com/wp-content/uploads/2019/12/xPSX_20190928_134709.jpg.pagespeed.ic.qsjw5ilFw5.jpg"
                 width="1500" height="1368" alt="">
         </div>
         <div class="recipe-content">
-            <h5 class="recipe-title">//Nombre Comida</h5>
+            <h5 class="recipe-title">{{name}}</h5>
             <p class="recipe-desc">
-                //Descripcion
+                {{description}}
             </p>
-            <p class="recipe-price">$$$Precio</p>
+            <p class="recipe-price">{{price}}</p>
         </div>
     </article>
+    {{/each}}
 </div>
 
-<div class="big">
-    <article class="recipe">
-        <div class="recipe-img">
-            <img src="https://brotokoll.com/wp-content/uploads/2019/12/xPSX_20190928_134709.jpg.pagespeed.ic.qsjw5ilFw5.jpg"
-                width="1500" height="1368" alt="">
-        </div>
-        <div class="recipe-content">
-            <h5 class="recipe-title">//Nombre Comida</h5>
-            <p class="recipe-desc">
-                //Descripcion
-            </p>
-            <p class="recipe-price">$$$Precio</p>
-        </div>
-    </article>
-</div>
