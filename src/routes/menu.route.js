@@ -4,12 +4,11 @@ const { renderDishForm, createNewDish, renderMenu, renderEditForm, updateDish, d
 
 
 // New dish
-router.get('/menu/add', renderDishForm);
-router.post('/menu/new-dish', createNewDish);
+router.get('/admin/menu/add', renderDishForm);
+router.post('/admin/menu/new-dish', createNewDish);
 
 // Get all foods
 router.get('/menu', renderMenu);
-
 // Edit dish
 router.get('/menu/edit/:id', renderEditForm);
 router.put('/menu/edit-dish/:id', updateDish);

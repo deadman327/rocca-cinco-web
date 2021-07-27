@@ -1,1 +1,45 @@
-<h1>menu</h1>
+<div class="m-0 vh-100 row justify-content-center align-items-center">
+  <div class="jumbotron">
+    <div class="col-md-4 max-auto">
+      <h1 class="display-4">Cree o Edite un nuevo platillo</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style
+        component for calling extra attention to featured content or
+        information.</p>
+      <hr class="my-4" />
+      <p>It uses utility classes for typography and spacing to space content out
+        within the larger container.</p>
+      <a
+        class="btn btn-primary btn-lg"
+        href="/admin/menu/add"
+        role="button"
+      >Nuevo Platillo</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    {{#each data}}
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-beetween align-items-center">
+                      {{name}} 
+                      <a href="/menu/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+                      
+                      </h4>
+                    <p>{{description}}</p>
+                    <p>{{price}}</p>
+                    <p>{{type}}</p>
+                    <form action="/menu/delete/{{_id}}?_method=DELETE" method="POST">
+                    
+                    <input type="hidden" name="_method" value="DELETE">
+
+                      <button type="submit" class="btn btn-danger btn-block btn-sm">Borrar plato</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    {{/each}}
+</div>

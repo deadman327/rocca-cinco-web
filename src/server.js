@@ -41,6 +41,7 @@ app.use(flash());
 app.use(require('./routes/index.route'));
 app.use(require('./routes/menu.route'));
 app.use(require('./routes/promotions.route'));
+app.use(require('./routes/admin.route'));
 
 // Static Files
 
