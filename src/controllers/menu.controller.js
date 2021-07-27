@@ -30,22 +30,22 @@ menuCtrl.renderMenu = async (req, res) => {
 
 menuCtrl.renderEditForm = async (req, res) => {
    // const id = req.params.id;
-    const data = await Menu.findById(req.params.id)
+    const data = await Menu.findById(req.params.id);
     res.render('admin/menu/edit-dish', {data});
 };
 
 menuCtrl.updateDish = async (req, res) => {
+    console.log(req.body)
     const id = req.params.id;
-    const { name, description, price, URLimage } = req.body;
-    await Menu.findByIdAndUpdate(id, {name, description, price, URLimage });
-    res.redirect('admin/menu/menu');
+    const { name, description, price, type, URLimage } = req.body;
+    await Menu.findByIdAndUpdate(id, {name, description, price, type, URLimage });
+    res.redirect('/admin/menu');
 };
 
 menuCtrl.deleteDish = async (req, res) => {
-    const id = req.params.id;
+    //const id = req.params.id;
     await Menu.findByIdAndDelete(req.params.id);
     res.redirect('/admin/menu');
-    
 };
 
 module.exports = menuCtrl;
