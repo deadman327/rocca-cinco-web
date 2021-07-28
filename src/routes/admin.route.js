@@ -1,18 +1,12 @@
 const { Router } = require('express');
 const router = Router();
-const {renderAdmin, renderMenuA, renderSigninForm, signin, logout} = require('../controllers/admin.controller');
-
+const {renderAdmin, renderLoginForm, signin, logout} = require('../controllers/admin.controller');
+const { isAuthenticated } = require ('../helpers/auth');
 
 // Admin Views
-
-router.get('/admin', renderAdmin);
-router.get('/admin/menu', renderMenuA);
-
-// Login admin
-router.get('/admin/signin', renderSigninForm);
+router.get('/admin', isAuthenticated, renderAdmin);
+router.get('/admin/signin', renderLoginForm);
 router.post('/admin/signin', signin);
 router.get('/admin/logout', logout);
-
-//router.get('admin/menu/edit)
 
 module.exports = router;

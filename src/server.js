@@ -8,12 +8,14 @@ const session = require('express-session');
 const Handlebars = require('handlebars')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 const passport = require('passport'); 
-
+const { createAdminUser } = require('./libs/createUser');
+require('./config/passport');
 
 // Initializations
 
 const app = express();
-require('./config/passport');
+
+createAdminUser();
 
 // Settings
 
@@ -37,7 +39,7 @@ app.use(session({
     secret: 'secret',
     resave: true,
     saveUninitialized: true
-}));
+    }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());

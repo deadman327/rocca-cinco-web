@@ -4,16 +4,16 @@ const Admin = require('../models/Admin');
 
 
 passport.use(new LocalStrategy({
-    usernameField: 'username',
+    usernameField: 'email',
     passpordField: 'password'
 
-}, async (username, password, done) => {
+}, async (email, password, done) => {
 
     // Match username Admin
-    const user = await Admin.findOne({username})
+    const user = await Admin.findOne({email})
     if(!user) {
-        console.log('Usuario no encontrado');
-        return done(null, false);
+        
+        return done(null, false, {message: 'Usuario no encontrado'});
     }else{
         // Math Password Admin
         const match = await user.matchPassword(password)
@@ -21,8 +21,7 @@ passport.use(new LocalStrategy({
             return done(null, user);
         }
         else{
-            console.log('Contraseña incorrecta');
-            return done(null, false);
+            return done(null, false, {message: 'Contraseña incorrecta'});
         }
     }
 }));
@@ -32,7 +31,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) =>{
-    Admin.findbyId(id, (err, user) => {
+    Admin.findById(id, (err, user) => {
         done(err, user);
     })
 });

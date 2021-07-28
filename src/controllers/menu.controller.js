@@ -16,7 +16,11 @@ menuCtrl.createNewDish = async (req, res) => {
     
 };
 
-
+// Render MENU FOR admin
+menuCtrl.renderMenuA = async (req, res) =>{
+    const data = await Menu.find().lean();
+    res.render('admin/menu/menu', {data});
+};
 // Render MENU FOR CUSTOMER
 menuCtrl.renderMenu = async (req, res) => {
     const data = await Menu.find().lean();

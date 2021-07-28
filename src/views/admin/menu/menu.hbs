@@ -20,12 +20,12 @@
       <div class="card-body">
         <h4 class="card-title d-flex justify-content-beetween align-items-center">
           {{name}}
-          <a href="/menu/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+          <a href="/admin/menu/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
         </h4>
         <p>{{description}}</p>
         <p>{{price}}</p>
         <p>{{ type }}</p>
-        <form action="/menu/delete/{{_id}}?_method=DELETE" method="POST">
+        <form action="/admin/menu/delete/{{_id}}?_method=DELETE" method="POST">
 
           <input type="hidden" name="_method" value="DELETE">
 
