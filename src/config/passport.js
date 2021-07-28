@@ -12,7 +12,8 @@ passport.use(new LocalStrategy({
     // Match username Admin
     const user = await Admin.findOne({username})
     if(!user) {
-        return done(null, false, {message: 'Usuario no encontrado'});
+        console.log('Usuario no encontrado');
+        return done(null, false);
     }else{
         // Math Password Admin
         const match = await user.matchPassword(password)
@@ -20,7 +21,8 @@ passport.use(new LocalStrategy({
             return done(null, user);
         }
         else{
-            return done(null, false, {message: 'Contraseña incorrecta'});
+            console.log('Contraseña incorrecta');
+            return done(null, false);
         }
     }
 }));
