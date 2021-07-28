@@ -7,10 +7,13 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const Handlebars = require('handlebars')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
+const passport = require('passport'); 
+
 
 // Initializations
 
 const app = express();
+require('./config/passport');
 
 // Settings
 
@@ -35,7 +38,11 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash());
+
+
 
 // Global Variables
 
