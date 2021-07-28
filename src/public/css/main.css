@@ -231,3 +231,70 @@ big {
  width: 100%;
  object-fit: cover;
 }
+
+
+
+/*--ADMIN--*/
+
+ .admim-main{
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  padding: auto;
+ }
+
+ .admim-main btn-admin{
+  padding: 80px;
+ }
+
+ .btn-admin{
+   color:black;
+   background: whitesmoke;
+   margin: auto;
+   text-align: center;
+   height: 5rem;
+   width: 15rem;
+   font-size: larger;
+   transition: background.4s, font-weight.4s;
+ }
+
+ .btn-admin:hover{
+  color:white;
+  background: darkorange;
+  font-weight: bold;
+}
+
+.btn-add-dish{
+  color:black;
+  background: whitesmoke;
+  margin: auto;
+  text-align: center;
+  height: 3rem;
+  width: 10rem;
+  font-size: larger;
+  transition: background.4s, font-weight.4s;
+}
+
+.btn-add-dish:hover{
+  color:white;
+  background: darkorange;
+  font-weight: bold;
+}
+
+.btn-back{
+  color:whitesmoke;
+  background:rgb(211, 10, 10);
+  margin: 1rem;
+  text-align: center;
+  height: 3rem;
+  width: 10rem;
+  font-size: larger;
+  transition: width.4s, font-weight.4s;
+  display:inline-block;
+}
+
+.btn-back:hover{
+  font-weight: bold;
+  width: 12rem;
+}
