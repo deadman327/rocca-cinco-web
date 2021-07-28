@@ -107,7 +107,6 @@ NAVIGATION BAR
   justify-content: space-around;
 }
 
-
 /*-------INDEX-------*/
 
 .btn-contactUs {
@@ -117,7 +116,6 @@ NAVIGATION BAR
   color: black;
   border: solid black 2px;
 }
-
 
 .btn-contactUs:hover {
   text-align: center;
@@ -133,10 +131,9 @@ NAVIGATION BAR
   text-align: center;
 }
 
-.nosotros h4{
+.nosotros h4 {
   font-size: 1.5rem;
 }
-
 
 /*Menu*/
 
@@ -185,7 +182,6 @@ NAVIGATION BAR
   color: inherit;
 }
 
-
 /* Body Layout */
 
 * {
@@ -193,9 +189,8 @@ NAVIGATION BAR
 }
 
 body {
-
-	justify-content: center;
-	flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .big {
@@ -204,6 +199,7 @@ body {
   justify-content: center;
   display: inline-block;
 }
+
 /*Contact Us*/
 
 big {
@@ -213,60 +209,57 @@ big {
   display: inline-block;
 }
 
-
-.serviceApps{
+.serviceApps {
   text-align: center;
   align-items: center;
 }
 
-.service-img{
+.service-img {
   margin: 20px;
   width: 30rem;
   height: 200px;
   display: inline-block;
 }
 
-.service-img img{
- height: 100%;
- width: 100%;
- object-fit: cover;
+.service-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-
-
 
 /*--ADMIN--*/
 
- .admim-main{
+.admim-main {
   margin: auto;
   width: 80%;
   padding: 20px;
   text-align: center;
   padding: auto;
- }
+}
 
- .admim-main btn-admin{
+.admim-main btn-admin {
   padding: 80px;
- }
+}
 
- .btn-admin{
-   color:black;
-   background: whitesmoke;
-   margin: auto;
-   text-align: center;
-   height: 5rem;
-   width: 15rem;
-   font-size: larger;
-   transition: background.4s, font-weight.4s;
- }
+.btn-admin {
+  color: black;
+  background: whitesmoke;
+  margin: auto;
+  text-align: center;
+  height: 5rem;
+  width: 15rem;
+  font-size: larger;
+  transition: background.4s, font-weight.4s;
+}
 
- .btn-admin:hover{
-  color:white;
+.btn-admin:hover {
+  color: white;
   background: darkorange;
   font-weight: bold;
 }
 
-.btn-add-dish{
-  color:black;
+.btn-add-dish {
+  color: black;
   background: whitesmoke;
   margin: auto;
   text-align: center;
@@ -276,25 +269,82 @@ big {
   transition: background.4s, font-weight.4s;
 }
 
-.btn-add-dish:hover{
-  color:white;
+.btn-add-dish:hover {
+  color: white;
   background: darkorange;
   font-weight: bold;
 }
 
-.btn-back{
-  color:whitesmoke;
-  background:rgb(211, 10, 10);
+.btn-back {
+  color: whitesmoke;
+  background: rgb(211, 10, 10);
   margin: 1rem;
   text-align: center;
   height: 3rem;
   width: 10rem;
   font-size: larger;
-  transition: width.4s, font-weight.4s;
-  display:inline-block;
+  transition:  font-weight.4s;
+  display: inline-block;
 }
 
-.btn-back:hover{
+.btn-back:hover {
   font-weight: bold;
-  width: 12rem;
+}
+
+.btn-login-admin {
+  border: solid 1px black;
+  color: black;
+  background: whitesmoke;
+  margin: auto;
+  text-align: center;
+  height: 3rem;
+  width: 10rem;
+  font-size: larger;
+  transition: background.4s, font-weight.4s;
+}
+
+.btn-login-admin:hover {
+  color: white;
+  background: darkorange;
+  font-weight: bold;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+}
+
+.logout-bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  position: relative;
+  height: 2rem;
+}
+
+.logout-bar a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: right;
+  height: 5rem;
+}
+
+.btn-logout {
+  color: rgb(88, 77, 77);
+  margin: 1rem;
+  text-align: center;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: larger;
+  transition: color.4s,background.4s, font-weight.4s;
+}
+
+.btn-logout:hover {
+  font-weight: bold;
+  background:rgb(201, 0, 0);
+  color: white;
 }
