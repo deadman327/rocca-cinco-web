@@ -1,9 +1,9 @@
 body {
   background: #ece9e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient( to right, #ffffff, #ece9e6);
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient( to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -120,7 +120,7 @@ NAVIGATION BAR
 .btn-contactUs:hover {
   text-align: center;
   background: black;
-  color: white
+  color: white;
 }
 
 .nosotros {
@@ -137,7 +137,8 @@ NAVIGATION BAR
 
 /*Menu*/
 
-.recipe, .recipe-img {
+.recipe,
+.recipe-img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -204,9 +205,9 @@ body {
 
 big {
   width: clamp(200px, 65%, 45%);
-  padding: 18px;
-  justify-content: center;
-  display: inline-block;
+  /* padding: 18px;*/
+  /*justify-content: center;*/
+  /* display: inline-block;*/
 }
 
 .serviceApps {
@@ -224,10 +225,7 @@ big {
 
 .service-img:hover {
   outline: solid darkorange 10px;
-   
-
 }
-
 
 .service-img img {
   width: 100%;
@@ -293,7 +291,7 @@ big {
   height: 3rem;
   width: 10rem;
   font-size: larger;
-  transition:  font-weight.4s;
+  transition: font-weight.4s;
   display: inline-block;
 }
 
@@ -350,12 +348,11 @@ big {
   height: 2.5rem;
   width: 9rem;
   font-size: larger;
-  transition: color.4s,background.4s, font-weight.4s;
+  transition: color.4s, background.4s, font-weight.4s;
 }
 
 .btn-logout:hover {
   font-weight: bold;
-  background:rgb(201, 0, 0);
+  background: rgb(201, 0, 0);
   color: white;
 }
-

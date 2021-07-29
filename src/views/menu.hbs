@@ -29,10 +29,11 @@
     </div>
 </div>
 
-<div>
+<div class="d-flex flex-wrap d-flex justify-content-around">
     {{#each data}}
-    <div class="big">
-        <article class="recipe">
+    
+<div class="big d-flex flex-row p-2 ">
+        <article class="recipe ">
             <div class="recipe-img">
                 <img src="{{URLimage}}" width="1500" height="1368" alt="">
             </div>
@@ -45,5 +46,8 @@
             </div>
         </article>
     </div>
+
+
+    
     {{/each}}
 </div>
