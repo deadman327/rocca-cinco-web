@@ -215,16 +215,26 @@ big {
 }
 
 .service-img {
-  margin: 20px;
-  width: 30rem;
-  height: 200px;
+  margin: 2rem;
+  width: 25rem;
+  height: 10rem;
   display: inline-block;
+  border-radius: 25px;
 }
 
+.service-img:hover {
+  outline: solid darkorange 10px;
+   
+
+}
+
+
 .service-img img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 /*--ADMIN--*/
@@ -348,3 +358,4 @@ big {
   background:rgb(201, 0, 0);
   color: white;
 }
+
